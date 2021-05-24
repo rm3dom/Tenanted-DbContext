@@ -18,6 +18,17 @@ function cleanup {
 }
 trap cleanup EXIT
 
+
+function waitpods() {
+  sleep 2
+  while kubectl --context kind-$KIND get pods --all-namespaces | grep -Eq "Pending|Waiting|ContainerCreating"
+  do
+    echo "waiting for pods ..." 
+    sleep 2
+  done
+}
+
+
 ##
 ## Create the DB init scripts and .Net connection strings
 ##
@@ -127,12 +138,8 @@ kubectl --context kind-$KIND create deployment "$NAME"  --image="$IMAGE_TAG" --p
 kubectl --context kind-$KIND expose deployment tenancyexample
 
 
-sleep 2
-while kubectl --context kind-$KIND get pods | grep -Eq "Pending|Waiting"
-do 
-  echo "waiting for pods ..." 
-  sleep 2
-done
+waitpods
+
 
 if [[ "Z$(kubectl --context kind-$KIND get pods | grep "CrashLoopBackOff")" != "Z" ]]
 then
