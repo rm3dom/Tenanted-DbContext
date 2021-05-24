@@ -6,7 +6,7 @@ Ultimately you would want to move to a tenanted data store per micro service.
 
 ## build_and_run.sh
 * Compile and create a container with the API
-* Sets up K8 cluster using `kind`
+* Sets up a K8 cluster using `kind`
   * Deploy the API with 2 replicas
   * Deploys multiple MySQL DB's with their own init.sql script 
     * Each tenant db will have a hello table with sayings of the form "Hello Tenant{X}"
