@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TenancyExample", "TenancyExample\TenancyExample.csproj", "{5A6CB70A-512D-45A2-9057-24FF0129A0EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A6CB70A-512D-45A2-9057-24FF0129A0EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A6CB70A-512D-45A2-9057-24FF0129A0EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A6CB70A-512D-45A2-9057-24FF0129A0EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A6CB70A-512D-45A2-9057-24FF0129A0EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
