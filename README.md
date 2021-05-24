@@ -23,6 +23,6 @@ Your pods may get killed of when you specify too many.
 
 ## Video
 
-[![Video](https://drive.google.com/file/d/1xdcdU6G0XbltYeaUhu6PryFvfh2ubSVR/view?usp=sharing)](https://drive.google.com/file/d/1owEjXNI4fz07Eyi4YW5kqfvMI8HBwKXr/view?usp=sharing)
+[![Video](example.png)](https://drive.google.com/file/d/1owEjXNI4fz07Eyi4YW5kqfvMI8HBwKXr/view?usp=sharing)
 
 
