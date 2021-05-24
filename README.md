@@ -14,7 +14,7 @@ Ultimately you would want to move to a tenanted data store per micro service.
 * Destroys the cluster.
 
 This was tested on a laptop with 12 cores, 32GB memory and 20 tenant database's. 
-Your pods may get killed of when you specify to many.
+Your pods may get killed of when you specify too many.
 
 ## Requirements
 * kubectl
